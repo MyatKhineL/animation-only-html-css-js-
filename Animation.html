@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            
+        }
+        .obj{
+            position: relative;
+        }
+        .img{
+        width: 28px;
+        height: 35px;
+        padding: 8px 8px;
+        }
+       .piano{
+       position: relative;
+       display: flex;
+       justify-content:space-between;
+       
+       margin-top: 322px;
+       }
+       .piano1{
+       position: relative;
+       display: flex;
+       justify-content:space-between;
+    
+       margin-top: -337px;
+       }
+       .cardone{
+       width: 50px;
+       height: 50px;
+       background-color: #6c5ce7;
+       margin: 20px 20px;
+       padding: -15px 20px;
+       border-radius: 10px;
+       padding: 8px 7px;
+       transition: 0.5s;
+       animation: first 40s linear  infinite;
+       position: absolute;
+       margin-top: 340px;
+      
+    }
+  
+    .cardtwo{
+       width: 50px;
+       height: 50px;
+       background-color: #6c5ce7;
+     
+       padding: -15px 20px;
+       border-radius: 10px;
+       padding: 8px 7px;
+       transition: 0.5s;
+       animation: first 40s linear  infinite;
+       position: absolute;
+       margin-top: 277px;
+       margin-left: 120px;
+      
+    }
+    .cardthree{
+       width: 50px;
+       height: 50px;
+       background-color: #6c5ce7;
+       
+       padding: -15px 20px;
+       border-radius: 10px;
+       padding: 8px 7px;
+       transition: 0.5s;
+       animation: first 40s linear  infinite;
+       position: absolute;
+       margin-top: 215px;
+       margin-left: 220px;
+    }
+    .cardfour{
+       width: 50px;
+       height: 50px;
+       background-color: #6c5ce7;
+       margin: 20px 20px;
+       padding: -15px 20px;
+       border-radius: 10px;
+       padding: 8px 7px;
+       transition: 0.5s;
+       animation: first 40s linear  infinite;
+       position: absolute;
+       margin-top: 155px;
+       margin-left: 320px;
+    }
+    .cardfive{
+       width: 50px;
+       height: 50px;
+       background-color: #6c5ce7;
+       margin: 20px 20px;
+       padding: -15px 20px;
+       border-radius: 10px;
+       padding: 8px 7px;
+       transition: 0.5s;
+       animation: first 40s linear  infinite;
+       position: absolute;
+       margin-top: 89px;
+       margin-left: 420px;
+      
+    }
+    .cardsix{
+       width: 50px;
+       height: 50px;
+       background-color: #6c5ce7;
+       margin: 20px 20px;
+       padding: -15px 20px;
+       border-radius: 10px;
+       padding: 8px 7px;
+       transition: 0.5s;
+       animation: first 40s linear  infinite;
+       position: absolute;
+       margin-top: 25px;
+       margin-left: 520px;
+      
+    }
+    .cardseven{
+       width: 50px;
+       height: 50px;
+       background-color: #6c5ce7;
+       margin: 20px 20px;
+       padding: -15px 20px;
+       border-radius: 10px;
+       padding: 8px 7px;
+       transition: 0.5s;
+       animation: first 40s linear  infinite;
+       position: absolute;
+       margin-top: 25px;
+       margin-left: 630px;
+      
+    }
+    .cardeight{
+       width: 50px;
+       height: 50px;
+       background-color: #6c5ce7;
+       margin: 20px 20px;
+       padding: -15px 20px;
+       border-radius: 10px;
+       padding: 8px 7px;
+       transition: 0.5s;
+       animation: first 40s linear  infinite;
+       position: absolute;
+       margin-top: 89px;
+       margin-left: 730px;
+      
+    }
+    .cardnine{
+       width: 50px;
+       height: 50px;
+       background-color: #6c5ce7;
+       margin: 20px 20px;
+       padding: -15px 20px;
+       border-radius: 10px;
+       padding: 8px 7px;
+       transition: 0.5s;
+       animation: first 40s linear  infinite;
+       position: absolute;
+       margin-top: 155px;
+       margin-left: 830px;
+    }
+    .cardten{
+       width: 50px;
+       height: 50px;
+       background-color: #6c5ce7;
+       
+       padding: -15px 20px;
+       border-radius: 10px;
+       padding: 8px 7px;
+       transition: 0.5s;
+       animation: first 40s linear  infinite;
+       position: absolute;
+       margin-top: 215px;
+       margin-left: 930px;
+    }
+    .card11{
+       width: 50px;
+       height: 50px;
+       background-color: #6c5ce7;
+     
+       padding: -15px 20px;
+       border-radius: 10px;
+       padding: 8px 7px;
+       transition: 0.5s;
+       animation: first 40s linear  infinite;
+       position: absolute;
+       margin-top: 278px;
+       margin-left: 1030px;
+      
+    }
+    .card12{
+       width: 50px;
+       height: 50px;
+       background-color: #6c5ce7;
+       margin: 20px 20px;
+       padding: -15px 20px;
+       border-radius: 10px;
+       padding: 8px 7px;
+       transition: 0.5s;
+       animation: first 40s linear  infinite;
+       position: absolute;
+       margin-top: 352px;
+       margin-left: 1122px;
+      
+    }
+    .card13{
+       width: 50px;
+       height: 50px;
+       background-color: #6c5ce7;
+       margin: 20px 20px;
+       padding: -15px 20px;
+       border-radius: 10px;
+       padding: 8px 7px;
+       transition: 0.5s;
+       animation: first 50s linear  infinite;
+       position: absolute;
+       margin-top: 340px;
+      
+    }
+    .card14{
+       width: 50px;
+       height: 50px;
+       background-color: #6c5ce7;
+     
+       padding: -15px 20px;
+       border-radius: 10px;
+       padding: 8px 7px;
+       transition: 0.5s;
+       animation: first 50s linear  infinite;
+       position: absolute;
+       margin-top: 277px;
+       margin-left: 120px;
+      
+    }
+    .card15{
+       width: 50px;
+       height: 50px;
+       background-color: #6c5ce7;
+       
+       padding: -15px 20px;
+       border-radius: 10px;
+       padding: 8px 7px;
+       transition: 0.5s;
+       animation: first 50s linear  infinite;
+       position: absolute;
+       margin-top: 215px;
+       margin-left: 220px;
+    }
+    .card16{
+       width: 50px;
+       height: 50px;
+       background-color: #6c5ce7;
+       margin: 20px 20px;
+       padding: -15px 20px;
+       border-radius: 10px;
+       padding: 8px 7px;
+       transition: 0.5s;
+       animation: first 50s linear  infinite;
+       position: absolute;
+       margin-top: 155px;
+       margin-left: 320px;
+    }
+    .card17{
+       width: 50px;
+       height: 50px;
+       background-color: #6c5ce7;
+       margin: 20px 20px;
+       padding: -15px 20px;
+       border-radius: 10px;
+       padding: 8px 7px;
+       transition: 0.5s;
+       animation: first 50s linear  infinite;
+       position: absolute;
+       margin-top: 89px;
+       margin-left: 420px;
+      
+    }
+    .card18{
+       width: 50px;
+       height: 50px;
+       background-color: #6c5ce7;
+       margin: 20px 20px;
+       padding: -15px 20px;
+       border-radius: 10px;
+       padding: 8px 7px;
+       transition: 0.5s;
+       animation: first 50s linear  infinite;
+       position: absolute;
+       margin-top: 25px;
+       margin-left: 520px;
+      
+    }
+    .card19{
+       width: 50px;
+       height: 50px;
+       background-color: #6c5ce7;
+       margin: 20px 20px;
+       padding: -15px 20px;
+       border-radius: 10px;
+       padding: 8px 7px;
+       transition: 0.5s;
+       animation: first 50s linear  infinite;
+       position: absolute;
+       margin-top: 25px;
+       margin-left: 630px;
+      
+    }
+    .card20{
+       width: 50px;
+       height: 50px;
+       background-color: #6c5ce7;
+       margin: 20px 20px;
+       padding: -15px 20px;
+       border-radius: 10px;
+       padding: 8px 7px;
+       transition: 0.5s;
+       animation: first 50s linear  infinite;
+       position: absolute;
+       margin-top: 89px;
+       margin-left: 730px;
+      
+    }
+    .card21{
+       width: 50px;
+       height: 50px;
+       background-color: #6c5ce7;
+       margin: 20px 20px;
+       padding: -15px 20px;
+       border-radius: 10px;
+       padding: 8px 7px;
+       transition: 0.5s;
+       animation: first 50s linear  infinite;
+       position: absolute;
+       margin-top: 155px;
+       margin-left: 830px;
+    }
+    .card22{
+       width: 50px;
+       height: 50px;
+       background-color: #6c5ce7;
+       
+       padding: -15px 20px;
+       border-radius: 10px;
+       padding: 8px 7px;
+       transition: 0.5s;
+       animation: first 50s linear  infinite;
+       position: absolute;
+       margin-top: 215px;
+       margin-left: 930px;
+    }
+    .card23{
+       width: 50px;
+       height: 50px;
+       background-color: #6c5ce7;
+     
+       padding: -15px 20px;
+       border-radius: 10px;
+       padding: 8px 7px;
+       transition: 0.5s;
+       animation: first 50s linear  infinite;
+       position: absolute;
+       margin-top: 278px;
+       margin-left: 1030px;
+      
+    }
+    .card24{
+       width: 50px;
+       height: 50px;
+       background-color: #6c5ce7;
+       margin: 20px 20px;
+       padding: -15px 20px;
+       border-radius: 10px;
+       padding: 8px 7px;
+       transition: 0.5s;
+       animation: first 50s linear  infinite;
+       position: absolute;
+       margin-top: 352px;
+       margin-left: 1122px;
+      
+    }
+   
+
+  
+  
+    @keyframes first{
+            from{transform: translateY(-50vh);}
+            to{transform: translateY(230vh);}
+         
+        }
+    @media screen and (max-width: 480px){
+        
+    }
+    .piano div:hover{
+        background-color:#f9ca24;
+    }
+    .piano1 div:hover{
+        background-color: #eb2f06;
+    }
+ 
+  
+
+     
+       
+       
+    </style>
+</head>
+<body>  
+         <div class="piano">
+            <div class="cardone" onclick="run('G4')">
+                <img src="music.png" class="img" >
+               
+            </div>
+            
+            <div class="cardtwo" onclick="run('G4')">
+                <img src="music.png" class="img" >
+               
+            </div>
+            <div class="cardthree" onclick="run('A4')">
+                <img src="music.png" class="img" >
+               
+            </div>
+            <div class="cardfour" onclick="run('G4')">
+                <img src="music.png" class="img" >
+               
+            </div>
+            
+            <div class="cardfive" onclick="run('C4')">
+                <img src="music.png" class="img" >
+               
+            </div>
+             <div class="cardsix" onclick="run('B4')">
+                <img src="music.png" class="img" >
+               
+            </div> 
+            <div class="cardseven" onclick="run('G4')">
+                <img src="music.png" class="img" >
+               
+            </div>
+            <div class="cardeight" onclick="run('G4')">
+                <img src="music.png" class="img" >
+               
+            </div>
+            <div class="cardnine" onclick="run('A4')">
+                <img src="music.png" class="img" >
+               
+            </div>
+            <div class="cardten" onclick="run('G4')">
+                <img src="music.png" class="img" >
+               
+            </div>
+            <div class="card11" onclick="run('D4')">
+                <img src="music.png" class="img" >
+               
+            </div>
+            <div class="card12" onclick="run('C4')">
+                <img src="music.png" class="img" >
+               
+            </div>
+             
+
+          </div>
+          <div class="piano1">
+            <div class="card13" onclick="run('C5')">
+                <img src="music.png" class="img" >
+               
+            </div>
+            
+            <div class="card14" onclick="run('D4')">
+                <img src="music.png" class="img" >
+               
+            </div>
+            <div class="card15" onclick="run('C4')">
+                <img src="music.png" class="img" >
+               
+            </div>
+            <div class="card16" onclick="run('E4')">
+                <img src="music.png" class="img" >
+               
+            </div>
+            
+            <div class="card17" onclick="run('F4')">
+                <img src="music.png" class="img" >
+               
+            </div>
+             <div class="card18" onclick="run('F4')">
+                <img src="music.png" class="img" >
+               
+            </div> 
+            <div class="card19" onclick="run('A4')">
+                <img src="music.png" class="img" >
+               
+            </div>
+            <div class="card20" onclick="run('B4')">
+                <img src="music.png" class="img" >
+               
+            </div>
+            <div class="card21" onclick="run('C4')">
+                <img src="music.png" class="img" >
+               
+            </div>
+            <div class="card22" onclick="run('E4')">
+                <img src="music.png" class="img" >
+               
+            </div>
+            <div class="card23" onclick="run('G4')">
+                <img src="music.png" class="img" >
+               
+            </div>
+            <div class="card24" onclick="run('G4')">
+                <img src="music.png" class="img" >
+               
+            </div>
+             
+          </div>
+
+         
+
+</body>
+</html>
+<script>
+ 
+
+     
+    let cords=document.getElementById("cords");
+    let pianoMemory=[];
+    let list=document.getElementById("list");
+
+    function run(x){
+    const a = new Audio(`${x}.mp3`);
+    a.play();
+    cords.value +=x + ",";
+    console.log(`You play ${x}Key `);
+    }
+
+    function saveChord(){
+    let input=cords.value;
+    pianoMemory.push(input);
+    console.log(`${input}save in memory`);
+    cords.value="";
+    list.innerHTML="";
+    pianoMemory.map(function(el,index){
+        list.innerHTML +=`<li>${el} <button onclick="rePlay(${index})">Replay</button><br></li>`;
+    })
+    }
+
+    let m=["C4","E4","B4","F4","C5","G4","C4","E4","B4","F4","C5","G4"];
+
+    function runMemory(arr,delay=700){
+        let x = delay;
+        arr.map(function(el,index){
+        setTimeout(run,x,el);
+        x+=delay;
+    });
+
+    }
+    function rePlay(x){
+        let current =pianoMemory[x].split(",");
+        current.pop();
+        runMemory(current)
+    
+    }
+   
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- .jbo{
+    width:100px;
+    height: 100px;
+    background:brown;
+    /* transition: 0.5s; */
+    /* animation-name:first; */
+    /* transform: translateY(10px); */
+    /* animation-duration: 2s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    animation-timing-function:linear; */
+    animation:first 10s linear infinite;
+    position: absolute;
+}
+   
+/* ul{
+    position: relative;
+    list-style: none;
+
+}
+ul li{
+    width: 50px;
+    height: 50px;
+    background-color:#EA2027;      
+    border-radius: 50%;
+    top:90vh;
+    position: absolute;
+    }
+ul li:nth-child(1){
+    left:0;
+    animation: a1 5s linear infinite;
+    width:50px;
+    height:50px;
+
+} */
+
+ 
+
+/*         
+@keyframes first {
+    from{
+     transform: translateY(-20px);
+    }
+    to{
+    transform: translateY(1000px);
+    }
+} */ -->
